@@ -13,6 +13,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import GameScreen from './src/screens/GameScreen';
 import MyTablesScreen from './src/screens/MyTablesScreen';
 import TableEditorScreen from './src/screens/TableEditorScreen';
+import ConfigScreen from './src/screens/ConfigScreen';
 import DeckStyleScreen from './src/screens/DeckStyleScreen';
 import CreateRoomScreen from './src/screens/CreateRoomScreen';
 import PublicRoomsScreen from './src/screens/PublicRoomsScreen';
