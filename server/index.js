@@ -6,6 +6,10 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('<h1>Servidor de Lotería La Garza activo y corriendo ✅</h1><p>El servidor de sockets está listo para recibir conexiones.</p>');
+});
+
 const server = http.createServer(app);
 
 const io = new Server(server, {
