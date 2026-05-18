@@ -1,0 +1,57 @@
+package com.google.android.gms.internal.firebase-auth-api;
+
+import java.util.Iterator;
+import java.util.Map;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+final class zzar extends zzaq {
+    private final transient zzal zza;
+    private final transient Object[] zzb;
+    private final transient int zzc;
+
+    public zzar(zzal zzalVar, Object[] objArr, int i, int i2) {
+        this.zza = zzalVar;
+        this.zzb = objArr;
+        this.zzc = i2;
+    }
+
+    public static /* bridge */ /* synthetic */ int zza(zzar zzarVar) {
+        return zzarVar.zzc;
+    }
+
+    public static /* bridge */ /* synthetic */ Object[] zzb(zzar zzarVar) {
+        return zzarVar.zzb;
+    }
+
+    public final boolean contains(Object obj) {
+        if (obj instanceof Map.Entry) {
+            Map.Entry entry = (Map.Entry) obj;
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            if (value != null && value.equals(this.zza.get(key))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final /* synthetic */ Iterator iterator() {
+        return iterator();
+    }
+
+    public final int size() {
+        return this.zzc;
+    }
+
+    public final zzay zzd() {
+        return (zzay) zzc().iterator();
+    }
+
+    public final zzah zzf() {
+        return new zzau(this);
+    }
+
+    public final int zza(Object[] objArr, int i) {
+        return zzc().zza(objArr, i);
+    }
+}

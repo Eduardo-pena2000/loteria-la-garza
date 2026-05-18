@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.measurement;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+public interface zzqn {
+    boolean zza();
+
+    long zzb();
+
+    double zzc();
+
+    long zzd();
+
+    long zze();
+
+    String zzf();
+}

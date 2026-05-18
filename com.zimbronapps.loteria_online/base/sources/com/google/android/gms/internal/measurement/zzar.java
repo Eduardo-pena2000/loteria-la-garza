@@ -1,0 +1,32 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Objects;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+final class zzar implements Iterator {
+    final /* synthetic */ zzas zza;
+    private int zzb;
+
+    public zzar(zzas zzasVar) {
+        Objects.requireNonNull(zzasVar);
+        this.zza = zzasVar;
+        this.zzb = 0;
+    }
+
+    public final boolean hasNext() {
+        return this.zzb < this.zza.zzb().length();
+    }
+
+    public final /* bridge */ /* synthetic */ Object next() {
+        zzas zzasVar = this.zza;
+        String zzb = zzasVar.zzb();
+        int i = this.zzb;
+        if (i >= zzb.length()) {
+            throw new NoSuchElementException();
+        }
+        this.zzb = i + 1;
+        return new zzas(String.valueOf(zzasVar.zzb().charAt(i)));
+    }
+}

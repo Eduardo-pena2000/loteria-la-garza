@@ -1,0 +1,27 @@
+package okhttp3.internal.http2;
+
+import okhttp3.internal.concurrent.Task;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public final class Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1 extends Task {
+    public final /* synthetic */ String e;
+    public final /* synthetic */ boolean f;
+    public final /* synthetic */ Http2Connection g;
+    public final /* synthetic */ int h;
+    public final /* synthetic */ int i;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public Http2Connection$ReaderRunnable$ping$$inlined$execute$default$1(String str, boolean z, Http2Connection http2Connection, int i, int i2) {
+        super(str, z);
+        this.e = str;
+        this.f = z;
+        this.g = http2Connection;
+        this.h = i;
+        this.i = i2;
+    }
+
+    public long f() {
+        this.g.w0(true, this.h, this.i);
+        return -1L;
+    }
+}

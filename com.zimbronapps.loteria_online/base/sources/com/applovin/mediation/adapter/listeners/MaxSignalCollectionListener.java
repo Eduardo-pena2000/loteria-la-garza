@@ -1,0 +1,8 @@
+package com.applovin.mediation.adapter.listeners;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public interface MaxSignalCollectionListener {
+    void onSignalCollected(String str);
+
+    void onSignalCollectionFailed(String str);
+}

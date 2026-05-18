@@ -1,0 +1,38 @@
+package com.unity3d.scar.adapter.common;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public enum c {
+    SCAR_PRESENT,
+    SCAR_NOT_PRESENT,
+    ALREADY_INITIALIZED,
+    INIT_SUCCESS,
+    INIT_ERROR,
+    VERSION,
+    SCAR_UNSUPPORTED,
+    SIGNALS,
+    SIGNALS_ERROR,
+    INTERNAL_SIGNALS_ERROR,
+    AD_LOADED,
+    INTERSTITIAL_IMPRESSION_RECORDED,
+    REWARDED_IMPRESSION_RECORDED,
+    INTERNAL_LOAD_ERROR,
+    QUERY_NOT_FOUND_ERROR,
+    LOAD_ERROR,
+    NO_AD_ERROR,
+    AD_STARTED,
+    INTERNAL_SHOW_ERROR,
+    AD_NOT_LOADED_ERROR,
+    REWARDED_SHOW_ERROR,
+    INTERSTITIAL_SHOW_ERROR,
+    FIRST_QUARTILE,
+    MIDPOINT,
+    THIRD_QUARTILE,
+    LAST_QUARTILE,
+    AD_EARNED_REWARD,
+    AD_CLICKED,
+    AD_SKIPPED,
+    AD_LEFT_APPLICATION,
+    AD_CLOSED,
+    METHOD_ERROR,
+    BANNER
+}

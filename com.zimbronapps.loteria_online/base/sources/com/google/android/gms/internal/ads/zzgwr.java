@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Iterator;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+abstract class zzgwr implements Iterator {
+    final Iterator zzb;
+
+    public zzgwr(Iterator it) {
+        it.getClass();
+        this.zzb = it;
+    }
+
+    public final boolean hasNext() {
+        return this.zzb.hasNext();
+    }
+
+    public final Object next() {
+        return zza(this.zzb.next());
+    }
+
+    public final void remove() {
+        this.zzb.remove();
+    }
+
+    public abstract Object zza(Object obj);
+}

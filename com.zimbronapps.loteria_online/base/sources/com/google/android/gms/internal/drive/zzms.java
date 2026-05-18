@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.drive;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+final class zzms implements zzlo {
+    public final int zzec() {
+        throw new NoSuchMethodError();
+    }
+
+    public final boolean zzed() {
+        throw new NoSuchMethodError();
+    }
+
+    public final zzlq zzee() {
+        throw new NoSuchMethodError();
+    }
+}

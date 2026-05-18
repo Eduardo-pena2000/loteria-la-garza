@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.consent_sdk;
+
+import android.app.Application;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+public final class zzca implements zzth {
+    private final zztk zza;
+
+    private zzca(zztk zztkVar) {
+        this.zza = zztkVar;
+    }
+
+    public static zzca zza(zztk zztkVar) {
+        return new zzca(zztkVar);
+    }
+
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzbz((Application) this.zza.zzb());
+    }
+}

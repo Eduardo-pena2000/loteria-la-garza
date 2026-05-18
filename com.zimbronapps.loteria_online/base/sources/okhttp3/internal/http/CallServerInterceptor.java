@@ -1,0 +1,48 @@
+package okhttp3.internal.http;
+
+import okhttp3.Interceptor;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public final class CallServerInterceptor implements Interceptor {
+    public final boolean a;
+
+    public CallServerInterceptor(boolean z) {
+        this.a = z;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x00e5 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:65:0x00aa, B:67:0x00b3, B:22:0x00bb, B:24:0x00e5, B:26:0x00ee, B:27:0x00f1, B:28:0x0115, B:32:0x0120, B:33:0x013f, B:35:0x014d, B:43:0x0163, B:48:0x0176, B:51:0x0199, B:52:0x01a3, B:60:0x0191, B:61:0x016c, B:62:0x0158, B:63:0x012f), top: B:64:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:43:0x0163 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:65:0x00aa, B:67:0x00b3, B:22:0x00bb, B:24:0x00e5, B:26:0x00ee, B:27:0x00f1, B:28:0x0115, B:32:0x0120, B:33:0x013f, B:35:0x014d, B:43:0x0163, B:48:0x0176, B:51:0x0199, B:52:0x01a3, B:60:0x0191, B:61:0x016c, B:62:0x0158, B:63:0x012f), top: B:64:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:45:0x0169  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x0176 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:65:0x00aa, B:67:0x00b3, B:22:0x00bb, B:24:0x00e5, B:26:0x00ee, B:27:0x00f1, B:28:0x0115, B:32:0x0120, B:33:0x013f, B:35:0x014d, B:43:0x0163, B:48:0x0176, B:51:0x0199, B:52:0x01a3, B:60:0x0191, B:61:0x016c, B:62:0x0158, B:63:0x012f), top: B:64:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:61:0x016c A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:65:0x00aa, B:67:0x00b3, B:22:0x00bb, B:24:0x00e5, B:26:0x00ee, B:27:0x00f1, B:28:0x0115, B:32:0x0120, B:33:0x013f, B:35:0x014d, B:43:0x0163, B:48:0x0176, B:51:0x0199, B:52:0x01a3, B:60:0x0191, B:61:0x016c, B:62:0x0158, B:63:0x012f), top: B:64:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:62:0x0158 A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:65:0x00aa, B:67:0x00b3, B:22:0x00bb, B:24:0x00e5, B:26:0x00ee, B:27:0x00f1, B:28:0x0115, B:32:0x0120, B:33:0x013f, B:35:0x014d, B:43:0x0163, B:48:0x0176, B:51:0x0199, B:52:0x01a3, B:60:0x0191, B:61:0x016c, B:62:0x0158, B:63:0x012f), top: B:64:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:63:0x012f A[Catch: IOException -> 0x00b8, TryCatch #2 {IOException -> 0x00b8, blocks: (B:65:0x00aa, B:67:0x00b3, B:22:0x00bb, B:24:0x00e5, B:26:0x00ee, B:27:0x00f1, B:28:0x0115, B:32:0x0120, B:33:0x013f, B:35:0x014d, B:43:0x0163, B:48:0x0176, B:51:0x0199, B:52:0x01a3, B:60:0x0191, B:61:0x016c, B:62:0x0158, B:63:0x012f), top: B:64:0x00aa }] */
+    /* JADX WARN: Removed duplicated region for block: B:64:0x00aa A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Type inference failed for: r9v13, types: [boolean] */
+    /* JADX WARN: Type inference failed for: r9v14 */
+    /* JADX WARN: Type inference failed for: r9v15 */
+    /* JADX WARN: Type inference failed for: r9v16 */
+    /* JADX WARN: Type inference failed for: r9v23 */
+    /* JADX WARN: Type inference failed for: r9v24 */
+    /* JADX WARN: Type inference failed for: r9v25 */
+    /* JADX WARN: Type inference failed for: r9v26 */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public okhttp3.Response a(okhttp3.Interceptor.Chain r14) {
+        /*
+            Method dump skipped, instructions count: 430
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: okhttp3.internal.http.CallServerInterceptor.a(okhttp3.Interceptor$Chain):okhttp3.Response");
+    }
+
+    public final boolean b(int i) {
+        if (i == 100) {
+            return true;
+        }
+        return 102 <= i && i < 200;
+    }
+}

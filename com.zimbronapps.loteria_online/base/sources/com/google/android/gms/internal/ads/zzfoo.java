@@ -1,0 +1,151 @@
+package com.google.android.gms.internal.ads;
+
+import S5.c1;
+import android.os.Bundle;
+import android.text.TextUtils;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final class zzfoo implements Runnable {
+    private final zzfor zzb;
+    private String zzc;
+    private String zze;
+    private zzfjb zzf;
+    private c1 zzg;
+    private Future zzh;
+    private final List zza = new ArrayList();
+    private int zzi = 2;
+    private zzfot zzd = zzfot.zzb;
+
+    public zzfoo(zzfor zzforVar) {
+        this.zzb = zzforVar;
+    }
+
+    public final synchronized void run() {
+        zzh();
+    }
+
+    public final synchronized zzfoo zza(zzfoe zzfoeVar) {
+        try {
+            if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+                List list = this.zza;
+                zzfoeVar.zzc();
+                list.add(zzfoeVar);
+                Future future = this.zzh;
+                if (future != null) {
+                    future.cancel(false);
+                }
+                this.zzh = zzcei.zzd.schedule(this, ((Integer) S5.D.c().zzd(zzbhe.zzkd)).intValue(), TimeUnit.MILLISECONDS);
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return this;
+    }
+
+    public final synchronized zzfoo zzb(ArrayList arrayList) {
+        try {
+            if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+                if (arrayList.contains("banner") || arrayList.contains(L5.c.BANNER.name())) {
+                    this.zzi = 3;
+                } else if (arrayList.contains("interstitial") || arrayList.contains(L5.c.INTERSTITIAL.name())) {
+                    this.zzi = 4;
+                } else if (arrayList.contains("native") || arrayList.contains(L5.c.NATIVE.name())) {
+                    this.zzi = 8;
+                } else if (arrayList.contains("rewarded") || arrayList.contains(L5.c.REWARDED.name())) {
+                    this.zzi = 5;
+                } else if (arrayList.contains("app_open_ad")) {
+                    this.zzi = 7;
+                } else if (arrayList.contains("rewarded_interstitial") || arrayList.contains(L5.c.REWARDED_INTERSTITIAL.name())) {
+                    this.zzi = 6;
+                }
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return this;
+    }
+
+    public final synchronized zzfoo zzc(String str) {
+        if (((Boolean) zzbix.zzc.zze()).booleanValue() && zzfon.zza(str)) {
+            this.zzc = str;
+        }
+        return this;
+    }
+
+    public final synchronized zzfoo zzd(Bundle bundle) {
+        if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+            this.zzd = b6.c.d(bundle);
+        }
+        return this;
+    }
+
+    public final synchronized zzfoo zze(zzfjb zzfjbVar) {
+        if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+            this.zzf = zzfjbVar;
+        }
+        return this;
+    }
+
+    public final synchronized zzfoo zzf(c1 c1Var) {
+        if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+            this.zzg = c1Var;
+        }
+        return this;
+    }
+
+    public final synchronized zzfoo zzg(String str) {
+        if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+            this.zze = str;
+        }
+        return this;
+    }
+
+    public final synchronized void zzh() {
+        try {
+            if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+                Future future = this.zzh;
+                if (future != null) {
+                    future.cancel(false);
+                }
+                List<zzfoe> list = this.zza;
+                for (zzfoe zzfoeVar : list) {
+                    int i = this.zzi;
+                    if (i != 2) {
+                        zzfoeVar.zzp(i);
+                    }
+                    if (!TextUtils.isEmpty(this.zzc)) {
+                        zzfoeVar.zze(this.zzc);
+                    }
+                    if (!TextUtils.isEmpty(this.zze) && !zzfoeVar.zzl()) {
+                        zzfoeVar.zzi(this.zze);
+                    }
+                    zzfjb zzfjbVar = this.zzf;
+                    if (zzfjbVar != null) {
+                        zzfoeVar.zzg(zzfjbVar);
+                    } else {
+                        c1 c1Var = this.zzg;
+                        if (c1Var != null) {
+                            zzfoeVar.zzh(c1Var);
+                        }
+                    }
+                    zzfoeVar.zzf(this.zzd);
+                    this.zzb.zzb(zzfoeVar.zzm());
+                }
+                list.clear();
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+    }
+
+    public final synchronized zzfoo zzi(int i) {
+        if (((Boolean) zzbix.zzc.zze()).booleanValue()) {
+            this.zzi = i;
+        }
+        return this;
+    }
+}

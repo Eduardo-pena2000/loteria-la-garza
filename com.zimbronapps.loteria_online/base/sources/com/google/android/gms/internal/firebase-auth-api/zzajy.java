@@ -1,0 +1,31 @@
+package com.google.android.gms.internal.firebase-auth-api;
+
+import java.util.NoSuchElementException;
+import java.util.Objects;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+final class zzajy extends zzaka {
+    private int zza;
+    private final int zzb;
+    private final /* synthetic */ zzajv zzc;
+
+    public zzajy(zzajv zzajvVar) {
+        Objects.requireNonNull(zzajvVar);
+        this.zzc = zzajvVar;
+        this.zza = 0;
+        this.zzb = zzajvVar.zzb();
+    }
+
+    public final boolean hasNext() {
+        return this.zza < this.zzb;
+    }
+
+    public final byte zza() {
+        int i = this.zza;
+        if (i >= this.zzb) {
+            throw new NoSuchElementException();
+        }
+        this.zza = i + 1;
+        return this.zzc.zzb(i);
+    }
+}

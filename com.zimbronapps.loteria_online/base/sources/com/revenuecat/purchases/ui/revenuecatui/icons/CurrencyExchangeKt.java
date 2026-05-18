@@ -1,0 +1,113 @@
+package com.revenuecat.purchases.ui.revenuecatui.icons;
+
+import B0.d;
+import B0.f;
+import kotlin.jvm.internal.k;
+import kotlin.jvm.internal.t;
+import n1.h;
+import v0.F1;
+import v0.G1;
+import v0.H1;
+import v0.h0;
+import v0.o1;
+import v0.r0;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public final class CurrencyExchangeKt {
+    private static d _Currency_exchange;
+
+    public static final d getCurrencyExchange() {
+        d dVar = _Currency_exchange;
+        if (dVar != null) {
+            t.d(dVar);
+            return dVar;
+        }
+        float f = 24;
+        d.a aVar = new d.a("CurrencyExchange", h.g(f), h.g(f), 960.0f, 960.0f, 0L, 0, false, 224, (k) null);
+        F1 f1 = new F1(r0.b.a(), (k) null);
+        int a = G1.a.a();
+        int b = H1.a.b();
+        int b2 = o1.a.b();
+        f fVar = new f();
+        fVar.i(480.0f, 920.0f);
+        fVar.k(-112.0f, 0.0f, -206.0f, -51.0f);
+        fVar.n(120.0f, 733.0f);
+        fVar.p(107.0f);
+        fVar.e(40.0f);
+        fVar.p(-240.0f);
+        fVar.f(240.0f);
+        fVar.p(80.0f);
+        fVar.f(-99.0f);
+        fVar.k(48.0f, 72.0f, 126.5f, 116.0f);
+        fVar.n(480.0f, 840.0f);
+        fVar.k(75.0f, 0.0f, 140.5f, -28.5f);
+        fVar.o(114.0f, -77.0f);
+        fVar.o(77.0f, -114.0f);
+        fVar.n(840.0f, 480.0f);
+        fVar.f(80.0f);
+        fVar.k(0.0f, 91.0f, -34.5f, 171.0f);
+        fVar.n(791.0f, 791.0f);
+        fVar.n(651.0f, 885.5f);
+        fVar.n(480.0f, 920.0f);
+        fVar.j(-36.0f, -160.0f);
+        fVar.p(-52.0f);
+        fVar.k(-47.0f, -11.0f, -76.5f, -40.5f);
+        fVar.n(324.0f, 590.0f);
+        fVar.h(66.0f, -26.0f);
+        fVar.k(12.0f, 41.0f, 37.5f, 61.5f);
+        fVar.n(486.0f, 646.0f);
+        fVar.o(56.5f, -15.5f);
+        fVar.n(566.0f, 582.0f);
+        fVar.k(0.0f, -29.0f, -24.5f, -47.0f);
+        fVar.n(454.0f, 494.0f);
+        fVar.k(-59.0f, -21.0f, -86.5f, -50.0f);
+        fVar.n(340.0f, 368.0f);
+        fVar.k(0.0f, -41.0f, 28.5f, -74.5f);
+        fVar.n(446.0f, 250.0f);
+        fVar.p(-50.0f);
+        fVar.f(70.0f);
+        fVar.p(50.0f);
+        fVar.k(36.0f, 3.0f, 65.5f, 29.0f);
+        fVar.o(40.5f, 61.0f);
+        fVar.h(-64.0f, 26.0f);
+        fVar.k(-8.0f, -23.0f, -26.0f, -38.5f);
+        fVar.n(482.0f, 312.0f);
+        fVar.k(-35.0f, 0.0f, -53.5f, 15.0f);
+        fVar.n(410.0f, 368.0f);
+        fVar.o(23.0f, 41.0f);
+        fVar.o(83.0f, 35.0f);
+        fVar.k(72.0f, 26.0f, 96.0f, 61.0f);
+        fVar.o(24.0f, 77.0f);
+        fVar.k(0.0f, 29.0f, -10.0f, 51.0f);
+        fVar.o(-26.5f, 37.5f);
+        fVar.o(-38.5f, 25.0f);
+        fVar.o(-47.0f, 14.5f);
+        fVar.p(50.0f);
+        fVar.a();
+        fVar.i(40.0f, 480.0f);
+        fVar.k(0.0f, -91.0f, 34.5f, -171.0f);
+        fVar.n(169.0f, 169.0f);
+        fVar.o(140.0f, -94.5f);
+        fVar.n(480.0f, 40.0f);
+        fVar.k(112.0f, 0.0f, 206.0f, 51.0f);
+        fVar.o(154.0f, 136.0f);
+        fVar.p(-107.0f);
+        fVar.f(80.0f);
+        fVar.p(240.0f);
+        fVar.e(680.0f);
+        fVar.p(-80.0f);
+        fVar.f(99.0f);
+        fVar.k(-48.0f, -72.0f, -126.5f, -116.0f);
+        fVar.n(480.0f, 120.0f);
+        fVar.k(-75.0f, 0.0f, -140.5f, 28.5f);
+        fVar.o(-114.0f, 77.0f);
+        fVar.o(-77.0f, 114.0f);
+        fVar.n(120.0f, 480.0f);
+        fVar.a();
+        d.a.d(aVar, fVar.d(), b2, "", f1, 1.0f, (h0) null, 1.0f, 1.0f, a, b, 1.0f, 0.0f, 0.0f, 0.0f, 14336, (Object) null);
+        d f2 = aVar.f();
+        _Currency_exchange = f2;
+        t.d(f2);
+        return f2;
+    }
+}

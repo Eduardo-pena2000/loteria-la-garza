@@ -1,0 +1,8 @@
+package z;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes.dex */
+public abstract class w {
+    public static final v a(double d) {
+        return d < 0.0d ? new v(0.0d, Math.sqrt(Math.abs(d))) : new v(Math.sqrt(d), 0.0d);
+    }
+}

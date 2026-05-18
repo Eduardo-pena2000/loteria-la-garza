@@ -1,0 +1,235 @@
+package w;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.function.Predicate;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes.dex */
+public final class l0 implements Collection, Ra.a {
+    public final c0 a;
+
+    public static final class a extends Ia.k implements Qa.p {
+        public Object a;
+        public Object b;
+        public int c;
+        public int d;
+        public int e;
+        public int f;
+        public long g;
+        public int h;
+        public /* synthetic */ Object i;
+
+        public a(Ga.e eVar) {
+            super(2, eVar);
+        }
+
+        public final Ga.e create(Object obj, Ga.e eVar) {
+            a aVar = l0.this.new a(eVar);
+            aVar.i = obj;
+            return aVar;
+        }
+
+        public final Object invoke(Ya.j jVar, Ga.e eVar) {
+            return create(jVar, eVar).invokeSuspend(Ca.I.a);
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:13:0x0097  */
+        /* JADX WARN: Removed duplicated region for block: B:16:0x009f  */
+        /* JADX WARN: Removed duplicated region for block: B:19:0x005a  */
+        /* JADX WARN: Removed duplicated region for block: B:7:0x006d  */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:10:0x0091 -> B:5:0x0094). Please report as a decompilation issue!!! */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:18:0x0058 -> B:15:0x009d). Please report as a decompilation issue!!! */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:19:0x005a -> B:6:0x006b). Please report as a decompilation issue!!! */
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:8:0x0074 -> B:5:0x0094). Please report as a decompilation issue!!! */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct code enable 'Show inconsistent code' option in preferences
+        */
+        public final java.lang.Object invokeSuspend(java.lang.Object r21) {
+            /*
+                r20 = this;
+                r0 = r20
+                java.lang.Object r1 = Ha.c.f()
+                int r2 = r0.h
+                r3 = 0
+                r4 = 8
+                r5 = 1
+                if (r2 == 0) goto L33
+                if (r2 != r5) goto L2b
+                int r2 = r0.f
+                int r6 = r0.e
+                long r7 = r0.g
+                int r9 = r0.d
+                int r10 = r0.c
+                java.lang.Object r11 = r0.b
+                long[] r11 = (long[]) r11
+                java.lang.Object r12 = r0.a
+                java.lang.Object[] r12 = (java.lang.Object[]) r12
+                java.lang.Object r13 = r0.i
+                Ya.j r13 = (Ya.j) r13
+                Ca.t.b(r21)
+                goto L94
+            L2b:
+                java.lang.IllegalStateException r1 = new java.lang.IllegalStateException
+                java.lang.String r2 = "call to 'resume' before 'invoke' with coroutine"
+                r1.<init>(r2)
+                throw r1
+            L33:
+                Ca.t.b(r21)
+                java.lang.Object r2 = r0.i
+                Ya.j r2 = (Ya.j) r2
+                w.l0 r6 = w.l0.this
+                w.c0 r6 = w.l0.a(r6)
+                java.lang.Object[] r7 = r6.c
+                long[] r6 = r6.a
+                int r8 = r6.length
+                int r8 = r8 + (-2)
+                if (r8 < 0) goto La2
+                r9 = r3
+            L4a:
+                r10 = r6[r9]
+                long r12 = ~r10
+                r14 = 7
+                long r12 = r12 << r14
+                long r12 = r12 & r10
+                r14 = -9187201950435737472(0x8080808080808080, double:-2.937446524422997E-306)
+                long r12 = r12 & r14
+                int r12 = (r12 > r14 ? 1 : (r12 == r14 ? 0 : -1))
+                if (r12 == 0) goto L9d
+                int r12 = r9 - r8
+                int r12 = ~r12
+                int r12 = r12 >>> 31
+                int r12 = 8 - r12
+                r13 = r2
+                r2 = r3
+                r18 = r10
+                r11 = r6
+                r10 = r8
+                r6 = r12
+                r12 = r7
+                r7 = r18
+            L6b:
+                if (r2 >= r6) goto L97
+                r14 = 255(0xff, double:1.26E-321)
+                long r14 = r14 & r7
+                r16 = 128(0x80, double:6.3E-322)
+                int r14 = (r14 > r16 ? 1 : (r14 == r16 ? 0 : -1))
+                if (r14 >= 0) goto L94
+                int r14 = r9 << 3
+                int r14 = r14 + r2
+                r14 = r12[r14]
+                r0.i = r13
+                r0.a = r12
+                r0.b = r11
+                r0.c = r10
+                r0.d = r9
+                r0.g = r7
+                r0.e = r6
+                r0.f = r2
+                r0.h = r5
+                java.lang.Object r14 = r13.a(r14, r0)
+                if (r14 != r1) goto L94
+                return r1
+            L94:
+                long r7 = r7 >> r4
+                int r2 = r2 + r5
+                goto L6b
+            L97:
+                if (r6 != r4) goto La2
+                r8 = r10
+                r6 = r11
+                r7 = r12
+                r2 = r13
+            L9d:
+                if (r9 == r8) goto La2
+                int r9 = r9 + 1
+                goto L4a
+            La2:
+                Ca.I r1 = Ca.I.a
+                return r1
+            */
+            throw new UnsupportedOperationException("Method not decompiled: w.l0.a.invokeSuspend(java.lang.Object):java.lang.Object");
+        }
+    }
+
+    public l0(c0 c0Var) {
+        kotlin.jvm.internal.t.g(c0Var, "parent");
+        this.a = c0Var;
+    }
+
+    public static final /* synthetic */ c0 a(l0 l0Var) {
+        return l0Var.a;
+    }
+
+    public boolean add(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public boolean addAll(Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public int b() {
+        return this.a.e;
+    }
+
+    public void clear() {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public boolean contains(Object obj) {
+        return this.a.d(obj);
+    }
+
+    public boolean containsAll(Collection collection) {
+        kotlin.jvm.internal.t.g(collection, "elements");
+        Collection collection2 = (Iterable) collection;
+        if (collection2.isEmpty()) {
+            return true;
+        }
+        Iterator it = collection2.iterator();
+        while (it.hasNext()) {
+            if (!this.a.d(it.next())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isEmpty() {
+        return this.a.h();
+    }
+
+    public Iterator iterator() {
+        return Ya.k.a(new a(null));
+    }
+
+    public boolean remove(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public boolean removeAll(Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public boolean removeIf(Predicate predicate) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public boolean retainAll(Collection collection) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    public final /* bridge */ int size() {
+        return b();
+    }
+
+    public Object[] toArray() {
+        return kotlin.jvm.internal.j.a(this);
+    }
+
+    public Object[] toArray(Object[] objArr) {
+        kotlin.jvm.internal.t.g(objArr, "array");
+        return kotlin.jvm.internal.j.b(this, objArr);
+    }
+}

@@ -1,0 +1,42 @@
+package com.unity3d.services.ads.operation.load;
+
+import com.unity3d.ads.UnityAds;
+import com.unity3d.services.core.request.metrics.SDKMetricsSender;
+import com.unity3d.services.core.webview.bridge.IWebViewBridgeInvoker;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public class LoadModuleDecorator implements ILoadModule {
+    private final ILoadModule _loadModule;
+
+    public LoadModuleDecorator(ILoadModule iLoadModule) {
+        this._loadModule = iLoadModule;
+    }
+
+    public SDKMetricsSender getMetricSender() {
+        return this._loadModule.getMetricSender();
+    }
+
+    public void onUnityAdsAdLoaded(String str) {
+        this._loadModule.onUnityAdsAdLoaded(str);
+    }
+
+    public void onUnityAdsFailedToLoad(String str, UnityAds.UnityAdsLoadError unityAdsLoadError, String str2) {
+        this._loadModule.onUnityAdsFailedToLoad(str, unityAdsLoadError, str2);
+    }
+
+    public void remove(String str) {
+        this._loadModule.remove(str);
+    }
+
+    public void executeAdOperation(IWebViewBridgeInvoker iWebViewBridgeInvoker, LoadOperationState loadOperationState) {
+        this._loadModule.executeAdOperation(iWebViewBridgeInvoker, loadOperationState);
+    }
+
+    public ILoadOperation get(String str) {
+        return (ILoadOperation) this._loadModule.get(str);
+    }
+
+    public void set(ILoadOperation iLoadOperation) {
+        this._loadModule.set(iLoadOperation);
+    }
+}

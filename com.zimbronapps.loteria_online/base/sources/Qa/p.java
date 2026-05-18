@@ -1,0 +1,6 @@
+package Qa;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public interface p extends Ca.h {
+    Object invoke(Object obj, Object obj2);
+}

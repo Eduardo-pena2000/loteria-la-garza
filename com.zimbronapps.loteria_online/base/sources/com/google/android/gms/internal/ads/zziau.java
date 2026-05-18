@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.IOException;
+import java.util.Locale;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final class zziau extends IOException {
+    public zziau() {
+        super("CodedOutputStream was writing to a flat byte array and ran out of space.");
+    }
+
+    public zziau(long j, long j2, int i, Throwable th) {
+        super("CodedOutputStream was writing to a flat byte array and ran out of space.: ".concat(String.format(Locale.US, "Pos: %d, limit: %d, len: %d", new Object[]{Long.valueOf(j), Long.valueOf(j2), Integer.valueOf(i)})), th);
+    }
+
+    public zziau(Throwable th) {
+        super("CodedOutputStream was writing to a flat byte array and ran out of space.", th);
+    }
+}

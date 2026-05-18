@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final class zzfof implements zzikg {
+    private final zzikp zza;
+    private final zzikp zzb;
+    private final zzikp zzc;
+    private final zzikp zzd;
+
+    private zzfof(zzikp zzikpVar, zzikp zzikpVar2, zzikp zzikpVar3, zzikp zzikpVar4, zzikp zzikpVar5, zzikp zzikpVar6) {
+        this.zza = zzikpVar;
+        this.zzb = zzikpVar2;
+        this.zzc = zzikpVar3;
+        this.zzd = zzikpVar6;
+    }
+
+    public static zzfof zza(zzikp zzikpVar, zzikp zzikpVar2, zzikp zzikpVar3, zzikp zzikpVar4, zzikp zzikpVar5, zzikp zzikpVar6) {
+        return new zzfof(zzikpVar, zzikpVar2, zzikpVar3, zzikpVar4, zzikpVar5, zzikpVar6);
+    }
+
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzfor(((zzcmj) this.zza).zza(), ((zzcna) this.zzb).zza(), (zzdvm) this.zzc.zzb(), zzcnh.zza(), zzcnk.zza(), (zzclx) this.zzd.zzb());
+    }
+}

@@ -1,0 +1,50 @@
+package F1;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes.dex */
+public abstract class c {
+    public static int A = 2131296294;
+    public static int B = 2131296295;
+    public static int C = 2131296296;
+    public static int D = 2131296297;
+    public static int E = 2131296298;
+    public static int F = 2131296299;
+    public static int G = 2131296300;
+    public static int H = 2131296666;
+    public static int I = 2131296667;
+    public static int J = 2131296668;
+    public static int K = 2131296669;
+    public static int L = 2131296670;
+    public static int M = 2131296671;
+    public static int N = 2131296672;
+    public static int O = 2131296673;
+    public static int P = 2131296674;
+    public static int Q = 2131296676;
+    public static int R = 2131296677;
+    public static int S = 2131296678;
+    public static int a = 2131296268;
+    public static int b = 2131296269;
+    public static int c = 2131296270;
+    public static int d = 2131296271;
+    public static int e = 2131296272;
+    public static int f = 2131296273;
+    public static int g = 2131296274;
+    public static int h = 2131296275;
+    public static int i = 2131296276;
+    public static int j = 2131296277;
+    public static int k = 2131296278;
+    public static int l = 2131296279;
+    public static int m = 2131296280;
+    public static int n = 2131296281;
+    public static int o = 2131296282;
+    public static int p = 2131296283;
+    public static int q = 2131296284;
+    public static int r = 2131296285;
+    public static int s = 2131296286;
+    public static int t = 2131296287;
+    public static int u = 2131296288;
+    public static int v = 2131296289;
+    public static int w = 2131296290;
+    public static int x = 2131296291;
+    public static int y = 2131296292;
+    public static int z = 2131296293;
+}

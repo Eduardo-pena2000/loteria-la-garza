@@ -1,0 +1,42 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final class zzfr {
+    public final String zza;
+
+    private zzfr(int i, int i2, String str) {
+        this.zza = str;
+    }
+
+    public static zzfr zza(zzer zzerVar) {
+        String str;
+        zzerVar.zzk(2);
+        int zzs = zzerVar.zzs();
+        int i = zzs >> 1;
+        int i2 = zzs & 1;
+        int zzs2 = zzerVar.zzs() >> 3;
+        if (i == 4 || i == 5 || i == 7 || i == 8) {
+            str = "dvhe";
+        } else if (i == 9) {
+            str = "dvav";
+        } else {
+            if (i != 10) {
+                return null;
+            }
+            str = "dav1";
+        }
+        int i3 = zzs2 | (i2 << 5);
+        String str2 = i < 10 ? ".0" : ".";
+        int length = str2.length() + 4;
+        int length2 = String.valueOf(i).length();
+        int length3 = String.valueOf(i3).length();
+        String str3 = i3 < 10 ? ".0" : ".";
+        StringBuilder sb = new StringBuilder(length + length2 + str3.length() + length3);
+        sb.append(str);
+        sb.append(str2);
+        sb.append(i);
+        sb.append(str3);
+        sb.append(i3);
+        return new zzfr(i, i3, sb.toString());
+    }
+}

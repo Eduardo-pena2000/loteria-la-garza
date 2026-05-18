@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.auth_blockstore;
+
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.api.internal.x;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+final class zzx extends zze {
+    final /* synthetic */ TaskCompletionSource zza;
+
+    public zzx(zzaa zzaaVar, TaskCompletionSource taskCompletionSource) {
+        this.zza = taskCompletionSource;
+    }
+
+    public final void zza(Status status, byte[] bArr) {
+        x.b(status, bArr, this.zza);
+    }
+}

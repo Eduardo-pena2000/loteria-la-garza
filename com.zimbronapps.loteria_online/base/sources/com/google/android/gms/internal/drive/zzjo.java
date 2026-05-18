@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.drive;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+public abstract class zzjo {
+    private int zznz;
+    private int zzoa;
+    private boolean zzob;
+
+    private zzjo() {
+        this.zznz = 100;
+        this.zzoa = Integer.MAX_VALUE;
+        this.zzob = false;
+    }
+
+    public static zzjo zza(byte[] bArr, int i, int i2, boolean z) {
+        zzjq zzjqVar = new zzjq(bArr, 0, i2, false, null);
+        try {
+            zzjqVar.zzv(i2);
+            return zzjqVar;
+        } catch (zzkq e) {
+            throw new IllegalArgumentException(e);
+        }
+    }
+
+    public static long zzk(long j) {
+        return (-(j & 1)) ^ (j >>> 1);
+    }
+
+    public static int zzw(int i) {
+        return (-(i & 1)) ^ (i >>> 1);
+    }
+
+    public abstract int zzbz();
+
+    public abstract int zzv(int i) throws zzkq;
+
+    public /* synthetic */ zzjo(zzjp zzjpVar) {
+        this();
+    }
+}

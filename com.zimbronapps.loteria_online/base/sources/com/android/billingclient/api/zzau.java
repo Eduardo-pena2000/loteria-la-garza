@@ -1,0 +1,19 @@
+package com.android.billingclient.api;
+
+import java.util.concurrent.Callable;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final /* synthetic */ class zzau implements Callable {
+    public final /* synthetic */ a zza;
+    public final /* synthetic */ ExternalOfferAvailabilityListener zzb;
+
+    public /* synthetic */ zzau(a aVar, ExternalOfferAvailabilityListener externalOfferAvailabilityListener) {
+        this.zza = aVar;
+        this.zzb = externalOfferAvailabilityListener;
+    }
+
+    public final Object call() {
+        a.c(this.zza, this.zzb);
+        return null;
+    }
+}

@@ -1,0 +1,8 @@
+package z;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes.dex */
+public interface s0 {
+    Qa.l a();
+
+    Qa.l b();
+}

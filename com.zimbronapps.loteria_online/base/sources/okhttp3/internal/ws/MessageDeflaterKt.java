@@ -1,0 +1,12 @@
+package okhttp3.internal.ws;
+
+import xb.h;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public final class MessageDeflaterKt {
+    public static final h a = h.d.b("000000ffff");
+
+    public static final /* synthetic */ h a() {
+        return a;
+    }
+}

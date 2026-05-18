@@ -1,0 +1,21 @@
+package com.unity3d.ads.core.domain;
+
+import com.unity3d.ads.adplayer.ExposedFunction;
+import com.unity3d.ads.core.data.model.AdObject;
+import com.unity3d.ads.core.domain.exposure.CommonAdViewerExposedFunctionsKt;
+import kotlin.jvm.internal.u;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes5.dex */
+public final class HandleInvocationsFromAdViewer$invoke$definition$51 extends u implements Qa.a {
+    final /* synthetic */ AdObject $adObject;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public HandleInvocationsFromAdViewer$invoke$definition$51(AdObject adObject) {
+        super(0);
+        this.$adObject = adObject;
+    }
+
+    public final ExposedFunction invoke() {
+        return CommonAdViewerExposedFunctionsKt.setOpportunityTTL(this.$adObject);
+    }
+}

@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.measurement;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+public final class zzf {
+    final zzaw zza;
+    final zzg zzb;
+    final zzg zzc;
+    final zzj zzd;
+
+    public zzf() {
+        zzaw zzawVar = new zzaw();
+        this.zza = zzawVar;
+        zzg zzgVar = new zzg(null, zzawVar);
+        this.zzc = zzgVar;
+        this.zzb = zzgVar.zzc();
+        zzj zzjVar = new zzj();
+        this.zzd = zzjVar;
+        zzgVar.zze("require", new zzw(zzjVar));
+        zzjVar.zza("internal.platform", zze.zza);
+        zzgVar.zze("runtime.counter", new zzah(Double.valueOf(0.0d)));
+    }
+
+    public final zzao zza(zzg zzgVar, zzje... zzjeVarArr) {
+        zzao zzaoVar = zzao.zzf;
+        for (zzje zzjeVar : zzjeVarArr) {
+            zzaoVar = zzi.zzb(zzjeVar);
+            zzh.zzl(this.zzc);
+            if ((zzaoVar instanceof zzap) || (zzaoVar instanceof zzan)) {
+                zzaoVar = this.zza.zzb(zzgVar, zzaoVar);
+            }
+        }
+        return zzaoVar;
+    }
+}

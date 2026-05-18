@@ -1,0 +1,12 @@
+package com.google.android.recaptcha.internal;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+public final class zzlr extends zzmz implements zzoj {
+    private zzlr() {
+        throw null;
+    }
+
+    public /* synthetic */ zzlr(zzmh zzmhVar) {
+        super(zzls.zzf());
+    }
+}

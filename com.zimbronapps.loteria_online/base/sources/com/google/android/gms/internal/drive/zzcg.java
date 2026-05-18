@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.drive;
+
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.api.h;
+import com.google.android.gms.common.api.m;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes4.dex */
+abstract class zzcg extends zzau {
+    private final /* synthetic */ zzcb zzfk;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public zzcg(zzcb zzcbVar, h hVar) {
+        super(hVar);
+        this.zzfk = zzcbVar;
+    }
+
+    public /* synthetic */ m createFailedResult(Status status) {
+        return new zzcf(this.zzfk, status, null, null);
+    }
+}

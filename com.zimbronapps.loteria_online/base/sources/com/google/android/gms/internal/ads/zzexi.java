@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.ScheduledExecutorService;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final class zzexi implements zzikg {
+    private final zzikp zza;
+    private final zzikp zzb;
+
+    private zzexi(zzikp zzikpVar, zzikp zzikpVar2) {
+        this.zza = zzikpVar;
+        this.zzb = zzikpVar2;
+    }
+
+    public static zzexi zza(zzikp zzikpVar, zzikp zzikpVar2) {
+        return new zzexi(zzikpVar, zzikpVar2);
+    }
+
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzezj(((zzezt) this.zza).zzb(), ((Integer) S5.D.c().zzd(zzbhe.zznC)).intValue(), (ScheduledExecutorService) this.zzb.zzb());
+    }
+}

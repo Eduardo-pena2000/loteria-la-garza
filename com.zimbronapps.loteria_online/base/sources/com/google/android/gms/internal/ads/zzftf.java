@@ -1,0 +1,59 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import java.util.Date;
+import java.util.Iterator;
+
+/* loaded from: /storage/emulated/0/Android/data/com.apktools.app.decompile/files/decompile_temp/jadx/classes3.dex */
+public final class zzftf implements zzfti {
+    private static final zzftf zza = new zzftf(new zzftj());
+    private Date zzb;
+    private boolean zzc;
+    private final zzftj zzd;
+    private boolean zze;
+
+    private zzftf(zzftj zzftjVar) {
+        this.zzd = zzftjVar;
+    }
+
+    public static zzftf zza() {
+        return zza;
+    }
+
+    public final Date zzb() {
+        Date date = this.zzb;
+        if (date != null) {
+            return (Date) date.clone();
+        }
+        return null;
+    }
+
+    public final void zzc(Context context) {
+        if (this.zzc) {
+            return;
+        }
+        zzftj zzftjVar = this.zzd;
+        zzftjVar.zzd(context);
+        zzftjVar.zzg(this);
+        zzftjVar.zze();
+        this.zze = zzftjVar.zza;
+        this.zzc = true;
+    }
+
+    public final void zzd(boolean z) {
+        if (!this.zze && z) {
+            Date date = new Date();
+            Date date2 = this.zzb;
+            if (date2 == null || date.after(date2)) {
+                this.zzb = date;
+                if (this.zzc) {
+                    Iterator it = zzfth.zza().zzf().iterator();
+                    while (it.hasNext()) {
+                        ((zzfsn) it.next()).zzg().zzn(zzb());
+                    }
+                }
+            }
+        }
+        this.zze = z;
+    }
+}
